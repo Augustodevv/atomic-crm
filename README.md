@@ -25,8 +25,8 @@ Veja o roadmap original em `CHANGELOG.md`.
 Precisa de: Node 24 LTS, Docker, Make.
 
 ```sh
-git clone https://github.com/Augustodevv/-nome-atomic-crm.git
-cd -nome-atomic-crm
+git clone https://github.com/Augustodevv/atomic-crm.git
+cd atomic-crm
 make install
 make start
 ```
