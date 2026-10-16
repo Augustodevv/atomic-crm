@@ -1,77 +1,63 @@
-# Atomic CRM — React + Supabase
+# Atomic CRM — estudo com React e Supabase
 
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-Postgres-3ECF8E?logo=supabase&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss&logoColor=white)
-![License MIT](https://img.shields.io/badge/license-MIT-green)
+Fork de estudo e personalização baseado no projeto open-source da Marmelab. A aplicação original reúne contatos, empresas, negociações em Kanban, tarefas, notas, importação de CSV, autenticação e API.
 
-CRM completo: contatos, empresas, Kanban de deals, tarefas, notas, import/export CSV, auth e API. Fork de estudo e portfólio a partir do projeto open-source da Marmelab.
+## Problema
 
-> 📸 **TODO:** substitua esta linha por um print/GIF seu: `docs/screenshot.png`
+Um CRM precisa reunir o histórico de relacionamento e o andamento das negociações sem espalhar informações entre diferentes ferramentas. Este repositório é usado para estudar a arquitetura de uma aplicação completa e praticar customizações em React e TypeScript.
 
-## ✨ Meu fork — o que estou trabalhando
+## Funcionalidades
 
-- [ ] Tradução PT-BR das telas principais
-- [ ] Deploy demo (Vercel + Supabase)
-- [ ] Customização de tema / logo
-- [ ] Testes das rotinas de import CSV
+- Gestão de contatos e empresas.
+- Quadro Kanban de negociações.
+- Tarefas e notas.
+- Importação e exportação de CSV.
+- Autenticação, armazenamento e API com Supabase.
+- Modo de demonstração sem backend.
 
-Veja o roadmap original em `CHANGELOG.md`.
+Essas funcionalidades fazem parte da base open-source; customizações autorais devem ser identificadas separadamente conforme forem concluídas.
 
-## 🚀 Como rodar
+## Tecnologias
 
-Precisa de: Node 24 LTS, Docker, Make.
+React 19, TypeScript, Vite, React Router, TanStack Query, React Hook Form, Tailwind CSS 4, Radix UI, Supabase e Vitest.
 
-```sh
+## Como executar
+
+Requisitos: Node.js 24 LTS, Docker e Make.
+
+```bash
 git clone https://github.com/Augustodevv/atomic-crm.git
 cd atomic-crm
 make install
 make start
 ```
 
-Acesse http://localhost:5173/ — crie o primeiro usuário.
+Modo de demonstração:
 
-Serviços locais:
-- Supabase dashboard: http://localhost:54323/
-- REST API: http://127.0.0.1:54321
-- Storage: http://localhost:54323/project/default/storage/buckets/attachments
-- Emails (Inbucket): http://localhost:54324/
-
-Demo sem backend:
-
-```sh
+```bash
 make start-demo
 ```
 
-## 🧪 Qualidade
+Comandos de qualidade:
 
-```sh
-make test       # vitest
-make typecheck  # tsc
-make lint       # eslint + prettier
-make build      # build produção
+```bash
+make test
+make typecheck
+make lint
+make build
 ```
 
-## 🛠️ Stack
+## Próximos passos
 
-React 19, TypeScript, Vite, React Router v7, TanStack Query, React Hook Form, shadcn-admin-kit + ra-core, shadcn UI / Radix, Tailwind v4, Supabase (Postgres + Auth + Storage + Edge Functions), Vitest.
+- Traduzir as telas principais para português.
+- Publicar uma demonstração configurada.
+- Aplicar identidade visual própria.
+- Verificar as rotinas de importação de CSV.
+- Adicionar capturas reais das customizações concluídas.
 
-Estrutura: `src/components/atomic-crm/` (app), `src/components/admin/` e `src/components/ui/` (dependências mutáveis — edite direto), `supabase/schemas/` (fonte da verdade do banco), `supabase/migrations/` (geradas via `npx supabase db diff --local -f <name>`).
+## Estado do projeto
 
-## 📚 Docs
+Projeto de estudo em desenvolvimento. O código-base foi criado e é mantido pela Marmelab; este fork preserva a atribuição e a licença MIT. As funções do sistema original não devem ser interpretadas como desenvolvimento integral de autoria de Augusto Novaes.
 
-- `doc/` e `AGENTS.md` na raiz
-- Online: https://marmelab.com/atomic-crm/doc/
+Documentação do projeto original: https://marmelab.com/atomic-crm/doc/
 
-## 👤 Autor
-
-**Augusto Novaes** — Front-End (React, TypeScript, Tailwind)
-- GitHub: https://github.com/Augustodevv
-- LinkedIn: https://www.linkedin.com/in/augustonovaesdev
-- Portfólio: https://www.augustodev.com
-
-## 📄 Licença / Créditos
-
-MIT — original © 2024-present Francois Zaninotto, Marmelab. Veja `LICENSE.md`. Este fork mantém a atribuição e adiciona customizações próprias acima.
